@@ -1,0 +1,175 @@
+:root {
+    --first-color: #F02E33;
+    --second-color: #F0702E;
+    --third-color: #F04E2E;
+    --fourth-color: #F02EA8;
+    --fifth-color: #F0922E;
+    --sixth-color: #F5A797;
+    --gap: 20px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    min-height: 100vh;
+    background-color: var(--fifth-color);
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 36px; /* Стандартный размер */
+    color: var(--fifth-color);
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 32px; /* Стандартный размер */
+    color: var(--sixth-color);
+}
+
+p, li {
+    margin: 0;
+    text-align: justify;
+    font-size: 18px; /* Стандартный размер */
+    color: var(--sixth-color);
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    margin-bottom: var(--gap);
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap);
+    padding: var(--gap);
+    background-color: var(--first-color);
+}
+
+header, footer {
+    background-color: var(--third-color);
+    padding: var(--gap);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    width: 70%;
+    max-width: 1200px; /* Стандартный размер для больших экранов */
+    padding: var(--gap);
+    box-sizing: border-box;
+    background-color: var(--second-color);
+}
+
+figure {
+    padding: var(--gap);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    margin: 0;
+    background-color: var(--first-color);
+}
+
+figcaption {
+    background-color: var(--second-color);
+    padding: var(--gap);
+    text-align: center;
+    color: var(--sixth-color);
+}
+
+img {
+    align-self: center;
+    max-height: 520px;
+}
+
+/* Медиа-запросы для заголовков, текста и секции */
+@media (max-width: 1440px) {
+    section {
+        max-width: 1000px; /* Для экранов меньше 1440px */
+    }
+    h1 {
+        font-size: 32px; /* Для экранов меньше 1440px */
+    }
+    h2 {
+        font-size: 28px; /* Для экранов меньше 1440px */
+    }
+    p, li, figcaption {
+        font-size: 16px; /* Для экранов меньше 1440px */
+    }
+}
+
+@media (max-width: 1366px) {
+    section {
+        max-width: 960px; /* Для экранов меньше 1366px */
+    }
+}
+
+@media (max-width: 1280px) {
+    section {
+        max-width: 900px; /* Для экранов меньше 1280px */
+    }
+}
+
+@media (max-width: 1024px) {
+    section {
+        max-width: 720px; /* Для экранов меньше 1024px */
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 80%; /* Для мобильных устройств */
+        max-width: 600px; /* Для мобильных устройств */
+    }
+    h1 {
+        font-size: 28px; /* Мобильные устройства */
+    }
+    h2 {
+        font-size: 24px; /* Мобильные устройства */
+    }
+    p, li, figcaption {
+        font-size: 16px; /* Мобильные устройства */
+    }
+}
+
+@media (max-width: 414px) {
+    section {
+        width: 90%; /* Для мобильных устройств */
+        max-width: 370px; /* Для мобильных устройств */
+    }
+    h1 {
+        font-size: 24px; /* Мобильные устройства */
+    }
+    h2 {
+        font-size: 22px; /* Мобильные устройства */
+    }
+    p, li, figcaption {
+        font-size: 14px; /* Мобильные устройства */
+    }
+}
+
+@media (max-width: 375px) {
+    section {
+        max-width: 340px; /* Для мобильных устройств */
+    }
+}
+
+@media (max-width: 320px) {
+    section {
+        max-width: 300px; /* Для мобильных устройств */
+    }
+}
